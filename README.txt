@@ -9,3 +9,7 @@ Example usage:
 > git clone https://github.com/anl/anl-puppetmaster.git
 > mv anl-puppetmaster ~/.puppet/modules/puppetmaster
 > sudo puppet apply --modulepath=~/.puppet/modules -e "include puppetmaster"
+
+or 
+
+> sudo puppet apply --modulepath=~/.puppet/modules -e "class { puppetmaster: hiera_gpg => true }"
