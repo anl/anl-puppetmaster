@@ -9,4 +9,4 @@ description 'Deploy puppetmaster on Ubuntu 12.04, including mod_passenger and
 project_page 'https://github.com/anl/anl-puppetmaster'
 
 ## Add dependencies, if any:
-dependency 'cprice404/inifile', '>= 0.0.3'
+dependency 'puppetlabs/inifile', '>= 1.0.0'

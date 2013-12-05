@@ -23,7 +23,7 @@
 #  - Andrew Leonard <andy.leonard@sbri.org>
 #
 # == Requires:
-#  - cprice404-inifile
+#  - puppetlabs-inifile
 #
 # == Sample Usage:
 #
@@ -95,7 +95,6 @@ class puppetmaster(
   if ($master_name == '') {
     fail('Puppetmaster name must be set; is fqdn fact not populated?')
   } else {
-    # Tested against cprice404/inifile 0.0.3:
     ini_setting { 'puppetmaster':
       ensure  => present,
       path    => '/etc/puppet/puppet.conf',
