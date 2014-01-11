@@ -63,7 +63,7 @@ class puppetmaster(
     owner   => 'root',
     group   => 'root',
     mode    => '0444',
-    source  => 'puppet:///modules/puppetmaster/apache2.conf',
+    source  => "puppet:///modules/puppetmaster/${::operatingsystem}-apache2.conf",
     notify  => Service['apache2'],
     require => Package['apache2.2-common'],
   }
